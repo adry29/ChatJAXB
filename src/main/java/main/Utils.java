@@ -188,8 +188,13 @@ public class Utils {
                 validator = "0";
             } else if (message.equals("1")) {//Devuelve todos los mensajes, antiguos y nuevos
                 room = c.read();
-                showMessages(room);
                 users = c.getUsers(room);
+                System.out.println("Usuarios activos: ");
+                for(User user : users){
+                    System.out.println("- "+user.getNickname());
+                }
+                showMessages(room);
+                
             } else {
                 room = c.read();
                 users = c.getUsers(room);
