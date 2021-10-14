@@ -1,0 +1,26 @@
+@startuml
+annotation jakarta.xml.bind.annotation.XmlAccessorType
+annotation jakarta.xml.bind.annotation.XmlElement
+annotation jakarta.xml.bind.annotation.XmlRootElement
+class com.mycompany.chatjaxb.classes.Message
+class com.mycompany.chatjaxb.classes.Room
+class com.mycompany.chatjaxb.classes.User
+class jakarta.xml.bind.annotation.XmlAccessType
+class jakarta.xml.bind.annotation.XmlType
+class java.security.Timestamp
+class java.time.LocalDateTime
+class java.time.format.DateTimeFormatter
+class java.util.ArrayList
+com.mycompany.chatjaxb.classes.Message ..> jakarta.xml.bind.annotation.XmlAccessorType
+com.mycompany.chatjaxb.classes.Message ..> jakarta.xml.bind.annotation.XmlRootElement
+com.mycompany.chatjaxb.classes.Message ..> jakarta.xml.bind.annotation.XmlAccessType
+com.mycompany.chatjaxb.classes.Message ..> jakarta.xml.bind.annotation.XmlType
+com.mycompany.chatjaxb.classes.Message ..> java.security.Timestamp
+com.mycompany.chatjaxb.classes.Message ..> java.time.LocalDateTime
+com.mycompany.chatjaxb.classes.Message ..> java.time.format.DateTimeFormatter
+com.mycompany.chatjaxb.classes.Room ..> jakarta.xml.bind.annotation.XmlAccessorType
+com.mycompany.chatjaxb.classes.Room ..> jakarta.xml.bind.annotation.XmlElement
+com.mycompany.chatjaxb.classes.Room ..> jakarta.xml.bind.annotation.XmlRootElement
+com.mycompany.chatjaxb.classes.Room ..> jakarta.xml.bind.annotation.XmlAccessType
+com.mycompany.chatjaxb.classes.Room ..> java.util.ArrayList
+@enduml
