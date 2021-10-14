@@ -76,6 +76,7 @@ public class Controller {
     }
     
     //Añade un nuevo mensaje, de la misma manera que la función addUser()
+    //
     public void addMessage(Message m) throws JAXBException{
         Room room = read();
         ArrayList<Message> messages = getMessages(room);
